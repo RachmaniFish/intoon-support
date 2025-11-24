@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>INTOON Support</title>
+  <meta name="description" content="INTOON support and FAQs" />
+  <style>
+    body{font-family:Inter,system-ui,Arial;margin:0;background:#f6fbff;color:#042029}
+    .wrap{max-width:980px;margin:28px auto;padding:22px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    h1{margin:0;color:#042029}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .card{background:#fff;border-radius:10px;padding:16px;box-shadow:0 6px 20px rgba(2,6,23,0.05)}
+    .faq{margin-top:12px}
+    .q{font-weight:700}
+    .muted{color:#6b7280;font-size:14px}
+    .contact{font-size:14px}
+    footer{margin-top:22px;font-size:13px;color:#6b7280;text-align:center}
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>INTOON Support</h1>
+        <div class="muted">Help center, FAQs and contact</div>
+      </div>
+      <nav style="font-size:14px">
+        <a href="marketing.html">Home</a> • <a href="terms_of_service.html">Terms</a> • <a href="privacy_policy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main>
+        <div class="card">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq">
+            <div class="q">Q: How long does generation take?</div>
+            <div class="muted">A: Typical short-scenes render in <strong>under 30s</strong>. Long/high-quality exports may take up to a few minutes depending on device/server load. We optimize the pipeline to reduce timeouts.</div>
+          </div>
+
+          <div class="faq" style="margin-top:12px">
+            <div class="q">Q: Where are my generated soundscapes stored?</div>
+            <div class="muted">A: Generated audio and metadata are stored temporarily in your account. You can delete saved audio in app settings. We retain data for up to 30 days after deletion requests.</div>
+          </div>
+
+          <div class="faq" style="margin-top:12px">
+            <div class="q">Q: How does the subscription billing work?</div>
+            <div class="muted">A: Premium is billed via Apple App Store at USD 49.99/year. Renewals and refunds are handled by Apple. See Terms for details.</div>
+          </div>
+
+          <div class="faq" style="margin-top:12px">
+            <div class="q">Q: Who can I email for support?</div>
+            <div class="muted">A: For account, billing and content issues contact: <strong>cencencwy@gmail.com</strong>.</div>
+          </div>
+
+          <hr style="margin:16px 0" />
+
+          <h3>Troubleshooting</h3>
+          <ul class="muted">
+            <li>If a generation errors, try reducing duration or quality setting.</li>
+            <li>For frequent timeouts, use shorter scenes and fewer simultaneous layers.</li>
+            <li>Provide the scene description and timestamp when contacting support.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Developer / Integration</h3>
+          <div class="muted">
+            For API, blueprint format, or tone.js scheduling integration questions email <strong>cencencwy@gmail.com</strong>. We also provide a machine-readable event schedule JSON for client-side playback.
+          </div>
+        </div>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Contact</h3>
+          <div class="contact">
+            📧 <a href="mailto:cencencwy@gmail.com">cencencwy@gmail.com</a><br/>
+            Response time: typically 24-72 hours.
+          </div>
+          <hr style="margin:12px 0" />
+          <h3>Important Links</h3>
+          <div class="muted">
+            <a href="privacy_policy.html">Privacy Policy</a><br/>
+            <a href="terms_of_service.html">Terms of Service</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Subscription</h3>
+          <div class="muted">Premium: <strong>USD 49.99 / year</strong>. Billed via Apple App Store. All time tracking for usage/quotas is recorded in UTC to avoid timezone disputes.</div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>© <span id="year2"></span> INTOON Studio • <a href="marketing.html">Back to home</a></footer>
+  </div>
+
+  <script>document.getElementById('year2').textContent=new Date().getFullYear();</script>
+</body>
+</html>
